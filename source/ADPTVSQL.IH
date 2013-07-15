@@ -1,0 +1,325 @@
+/* ADPTVSQL.IH - Internal Header for ADPTVSQL.DLL */
+ 
+ #define  TRUE          1
+ #define  FALSE         0
+ #define  OK            FALSE
+ #define  NOT_OK        TRUE
+
+ #ifndef RQ_LASTROW
+  #define RQ_LASTROW 15
+ #endif
+
+// Globals
+
+ #if ((SOURCE_MODULE == ADAPTIVE_C) || (SOURCE_MODULE > DBMS_DRIVER) ) 
+
+          char          *globalSegName="\\SHAREMEM\\ADPTVSQL";
+          int short     thisProcess=-1;
+          COMMON_STATE  *cs;
+          char          *nullFormat="";
+          char          *nullParms;
+      
+          long          nil;
+
+          CONNECTION    *db;
+          CURSOR        *sql;
+          STATE         *state;
+
+ #else
+
+   extern char          *globalSegName;
+   extern char          *nullFormat;
+   extern char          *nullParms;
+   extern int  short    thisProcess;
+   extern long          nil;
+
+   extern COMMON_STATE  *cs;
+   extern CONNECTION    *db;
+   extern CURSOR        *sql;
+   extern STATE         *state;
+
+ #endif
+
+// Function Prototypes
+
+  int  execOfflineCursor(int thisCursor);
+
+  int  xType2 bindCursor(int thisCursor);
+
+
+ #if (SOURCE_MODULE == ADAPTIVE_C)
+
+  #if (PLATFORM == XSQL_OS2)
+
+    int (* xType3 ehnConnect)(int thisConnect);
+    int (* xType3 ehnCloseCursor)(int thisCursor);
+    int (* xType3 ehnDescribe)(int thisCursor);
+    int (* xType3 ehnExecSQL)(int thisCursor);
+    int (* xType3 ehnExecSelect)(int thisCursor);
+    int (* xType3 ehnFetchSQLERRD3)(long *value,int thisCursor);
+    int (* xType3 ehnDisconnect)(int thisConnect);
+    int (* xType3 ehnError)(int wasCode,char *whichAPI,int thisConnect);
+    int (* xType3 ehnFetch)(int thisCursor,char **fetched);
+    int (* xType3 ehnOfflineCursor)(int thisCursor);
+
+  #endif
+
+  #if (PLATFORM == XSQL_WINNT)
+ 
+    int (* ehnConnect)(int thisConnect);
+    int (* ehnCloseCursor)(int thisCursor);
+    int (* ehnDescribe)(int thisCursor);
+    int (* ehnExecSQL)(int thisCursor);
+    int (* ehnExecSelect)(int thisCursor);
+    int (* ehnFetchSQLERRD3)(long *value,int thisCursor);
+    int (* ehnDisconnect)(int thisConnect);
+    int (* ehnError)(int wasCode,char *whichAPI,int thisConnect);
+    int (* ehnFetch)(int thisCursor,char **fetched);
+    int (* ehnOfflineCursor)(int thisCursor);
+
+  #endif
+
+  #if (PLATFORM == XSQL_OS2)
+ 
+   int (* xType3 dbmConnect)(int thisConnect);
+   int (* xType3 dbmExecSQL)(int thisCursor);
+   int (* xType3 dbmExecSelect)(int thisCursor);
+   int (* xType3 dbmFetchSQLERRD3)(long *value,int thisCursor);
+   int (* xType3 dbmDisconnect)(int thisConnect);
+   int (* xType3 dbmError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* xType3 dbmOfflineCursor)(int thisCursor);
+   int (* xType3 dbmCloseCursor)(int thisCursor);
+   int (* xType3 dbmFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+   #if (PLATFORM == XSQL_WINNT)
+ 
+   int (* dbmConnect)(int thisConnect);
+   int (* dbmExecSQL)(int thisCursor);
+   int (* dbmExecSelect)(int thisCursor);
+   int (* dbmFetchSQLERRD3)(long *value,int thisCursor);
+   int (* dbmDisconnect)(int thisConnect);
+   int (* dbmError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* dbmOfflineCursor)(int thisCursor);
+   int (* dbmCloseCursor)(int thisCursor);
+   int (* dbmFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+  #if (PLATFORM == XSQL_OS2)
+
+   int (* xType3 dbDescribe)(int thisCursor);
+   int (* xType3 dbConnect)(int thisConnect);
+   int (* xType3 dbExecSQL)(int thisCursor);
+   int (* xType3 dbExecSelect)(int thisCursor);
+   int (* xType3 dbFetchSQLERRD3)(long *value,int thisCursor);
+   int (* xType3 dbDisconnect)(int thisConnect);
+   int (* xType3 dbError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* xType3 dbOfflineCursor)(int thisCursor);
+   int (* xType3 dbCloseCursor)(int thisCursor);
+   int (* xType3 dbFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+  #if (PLATFORM == XSQL_WINNT)
+
+   int (* dbDescribe)(int thisCursor);
+   int (* dbConnect)(int thisConnect);
+   int (* dbExecSQL)(int thisCursor);
+   int (* dbExecSelect)(int thisCursor);
+   int (* dbFetchSQLERRD3)(long *value,int thisCursor);
+   int (* dbDisconnect)(int thisConnect);
+   int (* dbError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* dbOfflineCursor)(int thisCursor);
+   int (* dbCloseCursor)(int thisCursor);
+   int (* dbFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+  #if (PLATFORM == XSQL_OS2)
+
+   int (* xType3 qNeDescribe)(int thisCursor);
+   int (* xType3 qNeConnect)(int thisConnect);
+   int (* xType3 qNeExecSQL)(int thisCursor);
+   int (* xType3 qNeExecSelect)(int thisCursor);
+   int (* xType3 qNeFetchSQLERRD3)(long *value,int thisCursor);
+   int (* xType3 qNeDisconnect)(int thisConnect);
+   int (* xType3 qNeError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* xType3 qNeOfflineCursor)(int thisCursor);
+   int (* xType3 qNeCloseCursor)(int thisCursor);
+   int (* xType3 qNeFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+  #if (PLATFORM == XSQL_WINNT)
+
+   int (* qNeDescribe)(int thisCursor);
+   int (* qNeConnect)(int thisConnect);
+   int (* qNeExecSQL)(int thisCursor);
+   int (* qNeExecSelect)(int thisCursor);
+   int (* qNeFetchSQLERRD3)(long *value,int thisCursor);
+   int (* qNeDisconnect)(int thisConnect);
+   int (* qNeError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* qNeOfflineCursor)(int thisCursor);
+   int (* qNeCloseCursor)(int thisCursor);
+   int (* qNeFetch)(int thisCursor,char **fetched);
+
+  #endif
+
+  #if (PLATFORM == XSQL_OS2)
+
+   int (* xType3 akDescribe)(int thisCursor);
+   int (* xType3 akConnect)(int thisConnect);
+   int (* xType3 akExecSQL)(int thisCursor);
+   int (* xType3 akExecSelect)(int thisCursor);
+   int (* xType3 akFetchSQLERRD3)(long *value,int thisCursor);
+   int (* xType3 akDisconnect)(int thisConnect);
+   int (* xType3 akError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* xType3 akOfflineCursor)(int thisCursor);
+   int (* xType3 akCloseCursor)(int thisCursor);
+   int (* xType3 akFetch)(int thisCursor,char **fetched);
+
+  #endif 
+
+  #if (PLATFORM == XSQL_WINNT)
+
+   int (* akDescribe)(int thisCursor);
+   int (* akConnect)(int thisConnect);
+   int (* akExecSQL)(int thisCursor);
+   int (* akExecSelect)(int thisCursor);
+   int (* akFetchSQLERRD3)(long *value,int thisCursor);
+   int (* akDisconnect)(int thisConnect);
+   int (* akError)(int wasCode,char *whichAPI,int thisConnect);
+   int (* akOfflineCursor)(int thisCursor);
+   int (* akCloseCursor)(int thisCursor);
+   int (* akFetch)(int thisCursor,char **fetched);
+
+  #endif 
+
+ #endif
+
+  int  freeCursor(int thisConnect);
+
+ #if (PLATFORM == XSQL_OS2)
+
+  SITE * xType2 setSiteDependencies(char *);
+
+ #endif
+
+ #if (PLATFORM == XSQL_WINNT)
+
+  xType2 SITE * setSiteDependencies(char *);
+
+ #endif
+
+
+
+// Structure Reference Simplification
+
+  #define connection        db[thisConnect]
+  #define commit_mode       state->commitment
+  #define debug             state->debugCode
+  #define debugFile         state->dump
+  #define logFileName       state->LogFileName
+  #define logFile           state->msgFile
+  #define logMsgs           state->LogMsgs
+  #define mySQLbuffer       state->MySQLBuffer
+  #define nthContext        sql[nthCursor]
+  #define nthHit            nthContext.cache
+  #define sqlBuffer         sql[thisCursor].userText
+  #define sqlBufferCapacity sql[thisCursor].highWater 
+  #define thisApp           cs->app[thisProcess]
+  #define thisCache         cs->app[thisProcess]->cache
+  #define thisContext       sql[thisCursor]
+  #define thisDB            cs->app[thisProcess]->db[thisConnect]
+  #define thisDBMS(X)       ((X *)thisDB.details)
+  #define thisHit           thisContext.cache
+  #define thisState         cs->app[thisProcess]->has
+  #define thisSQLstate      ((struct sqlca *)(thisDB.state))
+  #define userColumn        state->UserColumn
+  #define userErrText       state->UserErrText
+  #define work              state->Work
+   
+ // Functional Macros
+
+ #define allocThisBinding {memset(&thisBinding,'\0',sizeof(BINDING));      \
+                    thisBinding.length      = &thisBinding.internalLength; \
+                           thisBinding.value       = value;                \
+                           thisBinding.boundColumn = thisColumn;           \
+                           thisBinding.sqlLength   = length;               \
+                           thisBinding.isBound     = TRUE;                 \
+                           thisContext.bindingsCopied = FALSE;             \
+                           thisContext.nBindings++;    }             
+
+ #define allocUserBinding {memset(&userBinding,'\0',sizeof(BINDING));     \
+                       userBinding.length      = length;               \
+                       userBinding.value       = value;                \
+                       userBinding.boundColumn = thisColumn;           \
+                       userBinding.isBound     = TRUE;                 \
+ if (thisContext.attributes) userBinding.sqlLength = &thisAttribute.sqllen;\
+                       thisContext.user.nBindings++;    }             
+
+ #define checkReference(X,Boolean)  {Boolean= X ? TRUE : FALSE;}
+
+ //ICC#define checkRefWithSize(X,Size,Boolean) {unsigned xSelector,xOffset;     \
+ //ICC          long xSize; xSelector = SELECTOROF(X); xOffset = OFFSETOF(X);   \
+ //ICC          if (!DosSizeSeg(xSelector,&xSize)&&xSize>=xOffset&&xSize>=Size) \
+ //ICC                 Boolean = TRUE; else Boolean = FALSE; }
+
+ #define checkRefWithSize(X,Size,Boolean) checkReference(X,Boolean);
+
+ #define Free(X) {if (X) free(X); X= NULL;}
+
+ #define MAX_SQL_IN_PROCESS maxCursors[connection.accessMode][0]
+
+ #define makeHandle(connect,sql)   (sql | (connect << 8))
+
+ #define parseHandle  thisConnect =  thisSQL >> 8;   \
+                      thisCursor  = (thisSQL & 0x00FF);
+
+ #define nthAttribute thisContext.attributes->sqlvar[nthColumn]
+
+ #define nthParameter ((struct sqlda *)thisContext.parameters)->sqlvar[nthColumn]
+
+ #define nthAAttribute ((struct Col_Attributes *)thisContext.augmentedAttributes)[nthColumn]
+
+ #define nthBinding   thisContext.bindings[nthColumn]
+
+ #define setStatePoint(here,toWhat) {state->lastCodeReturned=toWhat; \
+ if (state->traceOn) {if (toWhat < 0 || toWhat >= NON_XSQLDBMS_ERROR)\
+     fprintf(logFile,"%s (%s) code: %d\n",_strtime(work),here,toWhat);\
+     else fprintf(logFile,"%s (%s) %s\n",_strtime(work),here,errMsgs[toWhat].errorText);\
+     fflush(logFile);}               state->lastLoc=here;}
+
+ #define setStateNExit(here,toWhat) {state->lastCodeReturned=toWhat; \
+ if (state->traceOn) {if (toWhat < 0 || toWhat >= NON_XSQLDBMS_ERROR)\
+     fprintf(logFile,"%s (%s) code: %d\n",_strtime(work),here,toWhat);\
+     else fprintf(logFile,"%s (%s) %s\n",_strtime(work),here,errMsgs[toWhat].errorText);\
+     fflush(logFile);}               state->lastLoc=here;\
+                                     return toWhat;}
+
+ #define setStateNExit2(here,toWhat) {state->lastCodeReturned=toWhat; \
+ if (state->traceOn) {if (toWhat < 0 || toWhat >= NON_XSQLDBMS_ERROR)\
+     fprintf(logFile,"%s (%s) code: %s\n",_strtime(work),here,toWhat);\
+     else fprintf(logFile,"%s (%s) %s\n",_strtime(work),here,errMsgs[toWhat].errorText);\
+     fflush(logFile);}               state->lastLoc=here;\
+                                      return value;}
+
+ #define setStateNStop(toWhat)   {if (state->traceOn)\
+   {if (toWhat < 0 || toWhat >= NON_XSQLDBMS_ERROR)\
+     fprintf(logFile,"%s (%s) code: %s\n",_strtime(work),state->lastLoc,toWhat);\
+     else fprintf(logFile,"%s (%s) %s\n",_strtime(work),state->lastLoc,errMsgs[toWhat].errorText);\
+     fflush(logFile);}        state->lastCodeReturned=toWhat; goto stop;}
+
+ #define setStateNULL(here,toWhat)   {state->lastCodeReturned=toWhat; \
+ if (state->traceOn) {if (toWhat < 0 || toWhat >= NON_XSQLDBMS_ERROR)\
+     fprintf(logFile,"%s (%s) %d\n",_strtime(work),here,toWhat);\
+     else fprintf(logFile,"%s (%s) %s\n",_strtime(work),here,errMsgs[toWhat].errorText);\
+     fflush(logFile);}               state->lastLoc=here;\
+                                     return NULL;}
+ #define thisAttribute thisContext.attributes->sqlvar[thisColumn]
+
+ #define thisBinding  thisContext.bindings[thisColumn]
+
+ #define userBinding  thisContext.user.row[thisColumn]

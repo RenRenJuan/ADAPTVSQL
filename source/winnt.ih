@@ -1,0 +1,58 @@
+#ifndef USHORT
+ #define  USHORT  unsigned short    
+ #define  PVOID   void     *        
+ #define  PPVOID  void     * *    
+ #define  ULONG   unsigned long    
+ #define  PFN     int (*)()        
+ #define  HMODULE void *
+#endif
+
+#ifdef INCL_16DOSSEMAPHORES
+ 
+ #define SEM_INDEFINITE_WAIT   0
+
+ #define DosSemClear           DosCSemClear
+ #define DosSemRequest         DosCSemRequest
+ #define DosSemSet             DosCSemSet
+
+ USHORT DosCSemClear(void *);
+ USHORT DosCSemRequest(void *, ULONG);
+ USHORT DosCSemSet(void *);
+
+#endif
+
+#ifdef INCL_16DOSNMPIPES
+
+ #define ERROR_PIPE_NOT_CONNECTED 1
+
+ #define DosMakeNmPipe         DosCMakeNmPipe
+ #define DosConnectNmPipe      DosCConnectNmPipe
+ #define DosDisConnectNmPipe   DosCDisconnectNmPipe
+
+ USHORT DosCMakeNmPipe(void *pszName,
+        void *php, USHORT fsOpenMode, USHORT fsPipeMode, USHORT cbOutBuf,
+        USHORT cbInBuf, ULONG ulTimeOut);
+ USHORT DosCConnectNmPipe(unsigned long hp);
+ USHORT DosCDisconnectNmPipe(unsigned long hp);
+
+#endif
+
+#ifdef INCL_16DOSMODULEMGR
+ 
+ #define DosGetProcAddr        DosCGetProcAddr
+ #define DosLoadModule         DosCLoadModule
+
+ USHORT DosCLoadModule(char *failName, short cbFileName,
+                       char *pszModName, void *phmod);
+ USHORT DosCGetProcAddr(HMODULE hmod, char *pszProcName, void *ppfnProcAddr);
+
+#endif
+
+#ifdef INCL_DOSMEMMGR
+
+ #define PAG_WRITE             1
+ #define PAG_READ               2
+ #define PAG_COMMIT               3
+ #define ERROR_ALREADY_EXISTS  100
+
+#endif

@@ -1,0 +1,242 @@
+--------------------Configuration: xsqlcore - Win32 Debug--------------------
+Compiling...
+StdAfx.cpp
+Compiling...
+ADAPTIVE.C
+e:\dbms\xsqlcore\xsql1.h(5) : warning C4005: 'BATCHSQL_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(6) : warning C4005: 'PROFILE_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(7) : warning C4005: 'XSQL_EXE' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(8) : warning C4005: 'XSQL_C' : macro redefinition
+E:\dbms\xsqlcore\ADAPTIVE.C(288) : warning C4013: 'DosAllocSharedMem' undefined; assuming extern returning int
+E:\dbms\xsqlcore\ADAPTIVE.C(291) : warning C4013: 'DosGetNamedSharedMem' undefined; assuming extern returning int
+E:\dbms\xsqlcore\ADAPTIVE.C(339) : warning C4101: 'globalSelector' : unreferenced local variable
+E:\dbms\xsqlcore\ADAPTIVE.C(345) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(350) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(357) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(364) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(371) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(375) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(390) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(397) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(407) : warning C4102: 'case_DDCS_2' : unreferenced label
+E:\dbms\xsqlcore\ADAPTIVE.C(502) : warning C4035: 'bindXSQLDB22' : no return value
+E:\dbms\xsqlcore\ADAPTIVE.C(540) : warning C4035: 'bindXSQLPCS2' : no return value
+E:\dbms\xsqlcore\ADAPTIVE.C(547) : warning C4013: 'DosLoadModule' undefined; assuming extern returning int
+E:\dbms\xsqlcore\ADAPTIVE.C(550) : warning C4013: 'DosQueryProcAddr' undefined; assuming extern returning int
+E:\dbms\xsqlcore\ADAPTIVE.C(654) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\ADAPTIVE.C(670) : warning C4035: 'dumpSQL' : no return value
+os.c
+E:\dbms\xsqlcore\os.c(52) : warning C4047: 'function' : 'unsigned char ** ' differs in levels of indirection from 'char *'
+E:\dbms\xsqlcore\os.c(52) : warning C4024: 'DOS16LOADMODULE' : different types for formal and actual parameter 1
+E:\dbms\xsqlcore\os.c(52) : warning C4047: 'function' : 'unsigned char ** ' differs in levels of indirection from 'char *'
+E:\dbms\xsqlcore\os.c(52) : warning C4024: 'DOS16LOADMODULE' : different types for formal and actual parameter 3
+OS2286.C
+E:\dbms\xsqlcore\OS2286.C(50) : warning C4047: 'function' : 'unsigned char ** ' differs in levels of indirection from 'char *'
+E:\dbms\xsqlcore\OS2286.C(50) : warning C4024: 'DOS16LOADMODULE' : different types for formal and actual parameter 1
+E:\dbms\xsqlcore\OS2286.C(50) : warning C4047: 'function' : 'unsigned char ** ' differs in levels of indirection from 'char *'
+E:\dbms\xsqlcore\OS2286.C(50) : warning C4024: 'DOS16LOADMODULE' : different types for formal and actual parameter 3
+SQLKB.C
+e:\dbms\xsqlcore\xsql1.h(5) : warning C4005: 'BATCHSQL_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(6) : warning C4005: 'PROFILE_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(7) : warning C4005: 'XSQL_EXE' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(8) : warning C4005: 'XSQL_C' : macro redefinition
+E:\dbms\xsqlcore\SQLKB.C(140) : warning C4013: 'checkTheHeap' undefined; assuming extern returning int
+E:\dbms\xsqlcore\SQLKB.C(180) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\SQLKB.C(190) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\SQLKB.C(211) : warning C4013: 'xsqlLogPrint' undefined; assuming extern returning int
+E:\dbms\xsqlcore\SQLKB.C(333) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\SQLKB.C(419) : warning C4102: 'done' : unreferenced label
+E:\dbms\xsqlcore\SQLKB.C(419) : warning C4102: 'next' : unreferenced label
+E:\dbms\xsqlcore\SQLKB.C(419) : warning C4101: 'stringCursor' : unreferenced local variable
+E:\dbms\xsqlcore\SQLKB.C(447) : warning C4018: '==' : signed/unsigned mismatch
+E:\dbms\xsqlcore\SQLKB.C(533) : warning C4035: 'freeCursor' : no return value
+winntos2.c
+E:\dbms\xsqlcore\winntos2.c(62) : warning C4035: 'DosGetNamedSharedMem' : no return value
+E:\dbms\xsqlcore\winntos2.c(65) : warning C4035: 'DosAllocSharedMem' : no return value
+E:\dbms\xsqlcore\winntos2.c(68) : warning C4035: 'DosQueryProcAddr' : no return value
+E:\dbms\xsqlcore\winntos2.c(71) : warning C4035: 'DosLoadModule' : no return value
+E:\dbms\xsqlcore\winntos2.c(74) : warning C4035: 'DosWrite' : no return value
+E:\dbms\xsqlcore\winntos2.c(77) : warning C4035: 'paktoasc' : no return value
+Generating Code...
+Compiling...
+xsqlcore.cpp
+Generating Code...
+Compiling...
+Xsqldbms.c
+e:\dbms\xsqlcore\xsql1.h(5) : warning C4005: 'BATCHSQL_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(6) : warning C4005: 'PROFILE_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(7) : warning C4005: 'XSQL_EXE' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(8) : warning C4005: 'XSQL_C' : macro redefinition
+E:\dbms\xsqlcore\Xsqldbms.c(795) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\Xsqldbms.c(822) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\Xsqldbms.c(855) : warning C4102: 'done' : unreferenced label
+E:\dbms\xsqlcore\Xsqldbms.c(855) : warning C4101: 'heapCode' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(855) : warning C4101: 'dummy' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(855) : warning C4101: 'i' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(981) : warning C4101: 'heapCode' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(981) : warning C4101: 'nthRow' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(981) : warning C4101: 'thisRow' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(981) : warning C4101: 'theLength' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1068) : warning C4101: 'heapCode' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1140) : warning C4101: 'heapCode' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1341) : warning C4101: 'indicatorOffset' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1341) : warning C4101: 'heapCode' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1341) : warning C4101: 'sqlIndicator' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1391) : warning C4035: 'freeScroll' : no return value
+E:\dbms\xsqlcore\Xsqldbms.c(1391) : warning C4101: 'thisConnect' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1423) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\Xsqldbms.c(1431) : warning C4018: '==' : signed/unsigned mismatch
+E:\dbms\xsqlcore\Xsqldbms.c(1444) : warning C4101: 'value' : unreferenced local variable
+E:\dbms\xsqlcore\Xsqldbms.c(1518) : warning C4013: 'DosWrite' undefined; assuming extern returning int
+E:\dbms\xsqlcore\Xsqldbms.c(1532) : warning C4101: 'ulNow' : unreferenced local variable
+BATCHSQL.C
+e:\dbms\xsqlcore\xsql.h(144) : error C2065: 'MAX_UPDATE_KEYS' : undeclared identifier
+e:\dbms\xsqlcore\xsql.h(144) : error C2057: expected constant expression
+e:\dbms\xsqlcore\xsql.h(145) : error C2061: syntax error : identifier 'EXTENDED_SQL'
+e:\dbms\xsqlcore\xsql.h(147) : error C2059: syntax error : '}'
+e:\dbms\xsqlcore\xsql.h(169) : error C2061: syntax error : identifier 'EXTENDED_SQL'
+e:\dbms\xsqlcore\xsql.h(170) : error C2059: syntax error : '}'
+e:\dbms\xsqlcore\xsql.h(175) : error C2282: 'xType2' is followed by 'EXTENDED_SQL' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(177) : error C2282: 'xType2' is followed by 'xsqlBatchRun' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(216) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(219) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(220) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(222) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(223) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(224) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(228) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(228) : error C2282: '_System' is followed by 'xsqlCursor' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(229) : error C2282: '_System' is followed by 'xsqlLink' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(231) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(231) : error C2282: '_System' is followed by 'xsqlSetSiteDependencies' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(232) : error C2282: '_System' is followed by 'xsqlNamedCI' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(233) : error C2282: '_System' is followed by 'xsqlStoreProfile' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(234) : error C2282: '_System' is followed by 'xsqlLoadProfile' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(235) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\xsql.h(235) : error C2282: '_System' is followed by 'xsqlExecXSQL' (missing ','?)
+e:\dbms\xsqlcore\xsql.h(236) : error C2282: '_System' is followed by 'xsqlEndXSQL' (missing ','?)
+e:\dbms\xsqlcore\adptvsql.h(184) : error C2143: syntax error : missing ';' before '->'
+e:\dbms\xsqlcore\adptvsql.h(184) : error C2059: syntax error : '->'
+e:\dbms\xsqlcore\adptvsql.h(185) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(185) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(186) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(186) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(187) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(187) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(188) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(188) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(189) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(189) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(190) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(190) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(191) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(191) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(192) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(192) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(193) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(193) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(194) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(194) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(195) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(195) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(196) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(196) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(197) : error C2143: syntax error : missing '{' before ':'
+e:\dbms\xsqlcore\adptvsql.h(197) : error C2059: syntax error : ':'
+e:\dbms\xsqlcore\adptvsql.h(219) : error C2059: syntax error : '}'
+e:\dbms\xsqlcore\adptvsql.h(283) : error C2061: syntax error : identifier 'STATE'
+e:\dbms\xsqlcore\adptvsql.h(284) : error C2371: 'db' : redefinition; different basic types
+e:\dbms\xsqlcore\adptvsql.h(285) : error C2059: syntax error : '}'
+e:\dbms\xsqlcore\adptvsql.h(291) : error C2061: syntax error : identifier 'APPLICATION'
+e:\dbms\xsqlcore\adptvsql.h(292) : error C2059: syntax error : '}'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2143: syntax error : missing ')' before '*'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2040: 'state' : 'int ** ' differs in levels of indirection from 'int *'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2371: 'CURSOR' : redefinition; different basic types
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2143: syntax error : missing ';' before '*'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2371: 'CONNECTION' : redefinition; different basic types
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2143: syntax error : missing ';' before '*'
+e:\dbms\xsqlcore\adptvsql.h(311) : error C2059: syntax error : ')'
+e:\dbms\xsqlcore\adptvsql.ih(18) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\adptvsql.ih(24) : error C2371: 'db' : redefinition; different basic types
+e:\dbms\xsqlcore\adptvsql.ih(26) : error C2143: syntax error : missing '{' before '*'
+e:\dbms\xsqlcore\adptvsql.ih(220) : warning C4005: 'connection' : macro redefinition
+e:\dbms\xsqlcore\adptvsql.ih(230) : warning C4005: 'sqlBuffer' : macro redefinition
+e:\dbms\xsqlcore\adptvsql.ih(231) : warning C4005: 'sqlBufferCapacity' : macro redefinition
+e:\dbms\xsqlcore\xsql.h(8) : error C2371: 'RESERVED_CLASS_0' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(8) : error C2086: 'RESERVED_CLASS_0' : redefinition
+e:\dbms\xsqlcore\xsql.h(9) : error C2371: 'CONFIGURATION_CONTROLS' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(9) : error C2086: 'CONFIGURATION_CONTROLS' : redefinition
+e:\dbms\xsqlcore\xsql.h(10) : error C2371: 'RESERVED_CLASS_1' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(10) : error C2086: 'RESERVED_CLASS_1' : redefinition
+e:\dbms\xsqlcore\xsql.h(11) : error C2371: 'XSQL_PROFILE' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(11) : error C2086: 'XSQL_PROFILE' : redefinition
+e:\dbms\xsqlcore\xsql.h(12) : error C2371: 'GUI_CONTROLS' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(12) : error C2086: 'GUI_CONTROLS' : redefinition
+e:\dbms\xsqlcore\xsql.h(13) : error C2371: 'MAX_PROFREC_TYPE' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(13) : error C2086: 'MAX_PROFREC_TYPE' : redefinition
+e:\dbms\xsqlcore\xsql.h(14) : error C2371: 'CONTROL_DEF' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(14) : error C2086: 'CONTROL_DEF' : redefinition
+e:\dbms\xsqlcore\xsql.h(16) : error C2371: 'DATA_DEF' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(16) : error C2086: 'DATA_DEF' : redefinition
+e:\dbms\xsqlcore\xsql.h(19) : error C2371: 'NODE_ERROR' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(19) : error C2086: 'NODE_ERROR' : redefinition
+e:\dbms\xsqlcore\xsql.h(20) : error C2371: 'NEW_SUB' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(20) : error C2086: 'NEW_SUB' : redefinition
+e:\dbms\xsqlcore\xsql.h(21) : error C2371: 'PRE_SUB' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(21) : error C2086: 'PRE_SUB' : redefinition
+e:\dbms\xsqlcore\xsql.h(22) : error C2371: 'POST_SUB' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(22) : error C2086: 'POST_SUB' : redefinition
+e:\dbms\xsqlcore\xsql.h(23) : error C2371: 'PRE_NEXT' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(23) : error C2086: 'PRE_NEXT' : redefinition
+e:\dbms\xsqlcore\xsql.h(24) : error C2371: 'POST_NEXT' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(24) : error C2086: 'POST_NEXT' : redefinition
+e:\dbms\xsqlcore\xsql.h(25) : error C2371: 'NEW_RECORD' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(25) : error C2086: 'NEW_RECORD' : redefinition
+e:\dbms\xsqlcore\xsql.h(26) : error C2371: 'FOUND_LEAF' : redefinition; different basic types
+e:\dbms\xsqlcore\xsql.h(26) : fatal error C1003: error count exceeds 100; stopping compilation
+PROFILE.C
+e:\dbms\xsqlcore\adptvsql.h(28) : warning C4005: 'xType2' : macro redefinition
+e:\dbms\xsqlcore\adptvsql.h(59) : warning C4005: 'xType3' : macro redefinition
+e:\Program Files\DevStudio\VC\INCLUDE\sqltypes.h(101) : warning C4114: same type qualifier used more than once
+e:\Program Files\DevStudio\VC\INCLUDE\sqltypes.h(101) : error C2632: 'long' followed by 'long' is illegal
+e:\Program Files\DevStudio\VC\INCLUDE\sqltypes.h(102) : warning C4114: same type qualifier used more than once
+e:\Program Files\DevStudio\VC\INCLUDE\sqltypes.h(102) : error C2632: 'short' followed by 'short' is illegal
+e:\Program Files\DevStudio\VC\INCLUDE\sqltypes.h(116) : error C2282: 'HWND' is followed by 'SQLHWND' (missing ','?)
+f:\sqlany50\h\sqlca.h(83) : fatal error C1189: #error :  The appropriate _SQL_OS macro has not been defined
+REMOTSQL.C
+e:\dbms\xsqlcore\xsql1.h(5) : warning C4005: 'BATCHSQL_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(6) : warning C4005: 'PROFILE_C' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(7) : warning C4005: 'XSQL_EXE' : macro redefinition
+e:\dbms\xsqlcore\xsql1.h(8) : warning C4005: 'XSQL_C' : macro redefinition
+E:\dbms\xsqlcore\REMOTSQL.C(80) : warning C4013: 'DosSemRequest' undefined; assuming extern returning int
+E:\dbms\xsqlcore\REMOTSQL.C(80) : error C2065: 'SEM_INDEFINITE_WAIT' : undeclared identifier
+E:\dbms\xsqlcore\REMOTSQL.C(84) : warning C4013: 'DosSemSet' undefined; assuming extern returning int
+E:\dbms\xsqlcore\REMOTSQL.C(124) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(144) : warning C4013: 'DosSemClear' undefined; assuming extern returning int
+E:\dbms\xsqlcore\REMOTSQL.C(198) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\REMOTSQL.C(271) : warning C4018: '<' : signed/unsigned mismatch
+E:\dbms\xsqlcore\REMOTSQL.C(316) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(341) : warning C4035: 'ehnDisconnect' : no return value
+E:\dbms\xsqlcore\REMOTSQL.C(360) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(402) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(408) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(415) : warning C4133: '=' : incompatible types - from 'char *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(416) : warning C4133: '=' : incompatible types - from 'long *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(433) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(439) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(450) : warning C4133: 'function' : incompatible types - from 'unsigned int *' to 'short *'
+E:\dbms\xsqlcore\REMOTSQL.C(492) : warning C4035: 'ehnOfflineCursor' : no return value
+E:\dbms\xsqlcore\REMOTSQL.C(496) : warning C4133: 'function' : incompatible types - from 'struct INTERACTIVE_STATE ** ' to 'struct BATCH_STATE ** '
+E:\dbms\xsqlcore\REMOTSQL.C(496) : warning C4133: 'function' : incompatible types - from 'struct BATCH_STATE ** ' to 'struct INTERACTIVE_STATE ** '
+E:\dbms\xsqlcore\REMOTSQL.C(497) : warning C4035: 'ehnInit' : no return value
+Generating Code...
+E:\dbms\xsqlcore\Xsqldbms.c(251) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\dbms\xsqlcore\Xsqldbms.c(1026) : warning C4761: integral size mismatch in argument; conversion supplied
+E:\dbms\xsqlcore\Xsqldbms.c(1064) : warning C4761: integral size mismatch in argument; conversion supplied
+Error executing cl.exe.
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '.\Debug\BATCHSQL.SBR': No such file or directory
+Error executing bscmake.exe.
+
+xsqlcore.dll - 108 error(s), 110 warning(s)
