@@ -26,5 +26,5 @@ which I provided the engine and a remote capability and Harish Diwan provided mo
 app was critical in this success.
 
 This and an assortment of other programmings will of course be nothing more than early
-journeyman efforts compared to my vision of the Rawring Twenties, should it find similar
+journeyman efforts compared to my vision of the [Rawring Twenties](https://eg.meansofproduction.biz/eg/index.php/RawringTwenties), should it find similar
 realization.
