@@ -21,7 +21,7 @@ do but would have to be adapted, targets IBM DB/2.
 In my wage labor career, this was probably the most impactful piece of work. Givaudan at 
 the time was in a duopoly with International Flavors and Fragrances and was a wholly
 owned subsidiary of Hoffman LaRoche. Today it is the industry dominator eclipsing IFF and
-separated from Roche to become an indepdent compancy. I believe the workflow system for 
+separated from Roche to become an independent company. I believe the workflow system for 
 which I provided the engine and a remote capability and Harish Diwan provided most of the
 app was critical in this success.
 
