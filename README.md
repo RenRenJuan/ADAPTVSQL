@@ -24,3 +24,7 @@ owned subsidiary of Hoffman LaRoche. Today it is the industry dominator eclipsin
 separated from Roche to become an indepdent compancy. I believe the workflow system for 
 which I provided the engine and a remote capability and Harish Diwan provided most of the
 app was critical in this success.
+
+This and an assortment of other programmings will of course be nothing more than early
+journeyman efforts compared to my vision of the Rawring Twenties, should it find similar
+realization.
